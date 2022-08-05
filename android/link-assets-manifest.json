@@ -1,0 +1,1165 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Avenir-Heavy.ttf",
+      "sha1": "ac349f9ed344a6a56cec82665b167dfb60c609cf"
+    },
+    {
+      "path": "src/assets/fonts/Avenir-Medium.ttf",
+      "sha1": "21c28c88e87050fa15f6e130cbab263f49e85aba"
+    },
+    {
+      "path": "src/assets/fonts/Avenir-Roman.ttf",
+      "sha1": "07e622a5701bfcc8ac5c6981f6caaa2f771316e7"
+    },
+    {
+      "path": "src/assets/images/icons/activity.svg",
+      "sha1": "e0f088b885355b461da12378f79fd4a53b19c819"
+    },
+    {
+      "path": "src/assets/images/icons/airplay.svg",
+      "sha1": "85fc9518e7336aa1823c6af5d7d0bdde514db152"
+    },
+    {
+      "path": "src/assets/images/icons/alert-circle.svg",
+      "sha1": "74fecbf05ad8967e8888e79a6b39b48b6d954009"
+    },
+    {
+      "path": "src/assets/images/icons/alert-octagon.svg",
+      "sha1": "da72376534c6dab1c24e227d9a06786380aaaa1c"
+    },
+    {
+      "path": "src/assets/images/icons/alert-triangle.svg",
+      "sha1": "f5dc43ecec5b217f938baa7ddfb824d259dd89e0"
+    },
+    {
+      "path": "src/assets/images/icons/align-center.svg",
+      "sha1": "d4c89a2dcc81ed1d9ff65a3c3cbe20a0de6ed302"
+    },
+    {
+      "path": "src/assets/images/icons/align-justify.svg",
+      "sha1": "076daf4b3c1d5f04e3c5c803cec0f03d8843599e"
+    },
+    {
+      "path": "src/assets/images/icons/align-left.svg",
+      "sha1": "5a646ae6f5e6d71cd043e7ccfd3c0d10c90a2808"
+    },
+    {
+      "path": "src/assets/images/icons/align-right.svg",
+      "sha1": "2f064a6bf0b54a2e3bd7452d77720b43a85a047d"
+    },
+    {
+      "path": "src/assets/images/icons/anchor.svg",
+      "sha1": "15170ca83d474c13903bdbf70a50c5f9998a2428"
+    },
+    {
+      "path": "src/assets/images/icons/aperture.svg",
+      "sha1": "46a1453dc5c1a236434254334ffaca003bf256cb"
+    },
+    {
+      "path": "src/assets/images/icons/archive.svg",
+      "sha1": "f5f74cf70571e9bfa11cf44c940ab16486af29c4"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-down-circle.svg",
+      "sha1": "856a75d0096379185e815c8f24b54c4574c651e1"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-down-left.svg",
+      "sha1": "3c572b89adfd3cb62128ba67fe14bbd2a30fb9c6"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-down-right.svg",
+      "sha1": "b1bf2255f9d910136e456fe45a18a0280512c373"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-down.svg",
+      "sha1": "d5b9b808b3b5c45e61114a36ac0f3fea607732d2"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-left-circle.svg",
+      "sha1": "c5a83042d2e3c430ad24b6936d7df035c6a128bd"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-left.svg",
+      "sha1": "691cc0c905c9a46c0d94cd146c695c83d6e51856"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-right-circle.svg",
+      "sha1": "29184f4744eb7ef60733cdb2937297bc051dc323"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-right.svg",
+      "sha1": "cff2e3f0b86d7aca59fa173ce7861df07e830c78"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-up-circle.svg",
+      "sha1": "1f790306b545dc981c8c4ec0787f9eecdef06139"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-up-left.svg",
+      "sha1": "96fec1165e42421fa98b07b4478190f754beb5fd"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-up-right.svg",
+      "sha1": "41d625bb12ec4819810b881d1425c8e675ded441"
+    },
+    {
+      "path": "src/assets/images/icons/arrow-up.svg",
+      "sha1": "55780005f7b125d5f96c08140402af7f1e32e92a"
+    },
+    {
+      "path": "src/assets/images/icons/at-sign.svg",
+      "sha1": "6d1e3693a24cbd0fae5b58f22ae12e8c0cc7933d"
+    },
+    {
+      "path": "src/assets/images/icons/award.svg",
+      "sha1": "e423e857c272e2a7b253dcf71cf68dcb64f20606"
+    },
+    {
+      "path": "src/assets/images/icons/bar-chart-2.svg",
+      "sha1": "4c0ae7d8e80d401ea2518f8257c5cf9fc84dea40"
+    },
+    {
+      "path": "src/assets/images/icons/bar-chart.svg",
+      "sha1": "92e3b683acbd99040a147c24a2a55ae127bc9576"
+    },
+    {
+      "path": "src/assets/images/icons/battery-charging.svg",
+      "sha1": "7b0bd4fd99a413fe428298d1d172ebf329411038"
+    },
+    {
+      "path": "src/assets/images/icons/battery.svg",
+      "sha1": "8156527160441355094e08687a8ebd432b26812c"
+    },
+    {
+      "path": "src/assets/images/icons/bell-off.svg",
+      "sha1": "a85badd0543759095dbb12267ca157d321e035f6"
+    },
+    {
+      "path": "src/assets/images/icons/bell.svg",
+      "sha1": "db9a0418cd07f18ffb541e0cdc5431ddc3f4ecf5"
+    },
+    {
+      "path": "src/assets/images/icons/bluetooth.svg",
+      "sha1": "e8372d210d53307257ae65f985d2d86f7c6f6d61"
+    },
+    {
+      "path": "src/assets/images/icons/bold.svg",
+      "sha1": "9c827bed0e15349b9fc06aa991a968e2ee156136"
+    },
+    {
+      "path": "src/assets/images/icons/book-open.svg",
+      "sha1": "63d6dbdd9076730d260f339d546b5e7229c6f6a7"
+    },
+    {
+      "path": "src/assets/images/icons/book.svg",
+      "sha1": "c90a67395c144fa207f2837eb7e7cd0d4730a383"
+    },
+    {
+      "path": "src/assets/images/icons/bookmark.svg",
+      "sha1": "ec0be445f8c9999c26ef1753b01b7ddd60506afc"
+    },
+    {
+      "path": "src/assets/images/icons/box.svg",
+      "sha1": "2ddf26f7f1edd334e14d27ca9bc92a11d6e1a442"
+    },
+    {
+      "path": "src/assets/images/icons/briefcase.svg",
+      "sha1": "309729d427a050d91bddcacf7ca12c36ae512ff2"
+    },
+    {
+      "path": "src/assets/images/icons/calendar.svg",
+      "sha1": "582f072d35c48f90aef98b13daf9d86ea7d3fbe0"
+    },
+    {
+      "path": "src/assets/images/icons/camera-off.svg",
+      "sha1": "ac7565adf90ca5a655039d4cc3d668ec238a5363"
+    },
+    {
+      "path": "src/assets/images/icons/camera.svg",
+      "sha1": "0a68b9406f601bed1e413ffceb50ee3d784de9b0"
+    },
+    {
+      "path": "src/assets/images/icons/cast.svg",
+      "sha1": "8b6ea1619532a518ea49aee77ffe4fa7debc712e"
+    },
+    {
+      "path": "src/assets/images/icons/check-circle.svg",
+      "sha1": "7f89521daf06079f96d78462e3f69b3e8958bf98"
+    },
+    {
+      "path": "src/assets/images/icons/check-square.svg",
+      "sha1": "650317f4a44c73203f2bfd50707e2ca83c6a8a42"
+    },
+    {
+      "path": "src/assets/images/icons/check.svg",
+      "sha1": "b9a3d1a4ebf122848290bb9ba7502adcf6308bfc"
+    },
+    {
+      "path": "src/assets/images/icons/chevron-down.svg",
+      "sha1": "1d226f5e088a38fc5b4a6f3ffe838aced1e05d17"
+    },
+    {
+      "path": "src/assets/images/icons/chevron-left.svg",
+      "sha1": "5b8c87c85b9489d2ff7eccc5d88c17c4ff236250"
+    },
+    {
+      "path": "src/assets/images/icons/chevron-right.svg",
+      "sha1": "ea3711cbd992c598d193d77ca5cf5d69043d67c0"
+    },
+    {
+      "path": "src/assets/images/icons/chevron-up.svg",
+      "sha1": "5cbc39456d6f2a407ee6b90106301221920235d5"
+    },
+    {
+      "path": "src/assets/images/icons/chevrons-down.svg",
+      "sha1": "9bfca1a779094f87128ba55d0dc4336b426cf8be"
+    },
+    {
+      "path": "src/assets/images/icons/chevrons-left.svg",
+      "sha1": "2016a79861586240446723548cdd348cf697ffa2"
+    },
+    {
+      "path": "src/assets/images/icons/chevrons-right.svg",
+      "sha1": "1285c8df2c748b10d5fb6cc106627703d71eff86"
+    },
+    {
+      "path": "src/assets/images/icons/chevrons-up.svg",
+      "sha1": "dcf71a583bc94bd7a4144e72f8bbd088fb7c801a"
+    },
+    {
+      "path": "src/assets/images/icons/chrome.svg",
+      "sha1": "896b426126d85bcb404c62489f8ccc22f91e87e3"
+    },
+    {
+      "path": "src/assets/images/icons/circle.svg",
+      "sha1": "43aff43dc6b86edeaa3d1b05cd0b7dcf193e674e"
+    },
+    {
+      "path": "src/assets/images/icons/clipboard.svg",
+      "sha1": "fe4dbdc0c082a85cd655255ed28a8ef1d9d9f77a"
+    },
+    {
+      "path": "src/assets/images/icons/clock.svg",
+      "sha1": "11287d2926ec5a52fd8897711ebb15cec2365b69"
+    },
+    {
+      "path": "src/assets/images/icons/cloud-drizzle.svg",
+      "sha1": "6d295e5eca0ea417a62a10d62a3c570159ef4a92"
+    },
+    {
+      "path": "src/assets/images/icons/cloud-lightning.svg",
+      "sha1": "6bac0258a173e89357a11f36a496c42d84e7883d"
+    },
+    {
+      "path": "src/assets/images/icons/cloud-off.svg",
+      "sha1": "9ac835f2b14620b5d53811192a28403129360d1e"
+    },
+    {
+      "path": "src/assets/images/icons/cloud-rain.svg",
+      "sha1": "0cd7c971a2c02f5a490cd0adffb6531f98f7538f"
+    },
+    {
+      "path": "src/assets/images/icons/cloud-snow.svg",
+      "sha1": "d8ecb4a7669a0c0f1950a8a0b98584933a1635fc"
+    },
+    {
+      "path": "src/assets/images/icons/cloud.svg",
+      "sha1": "6d63c78de7e7ff32f616890b326ef03f990e1960"
+    },
+    {
+      "path": "src/assets/images/icons/code.svg",
+      "sha1": "a6cff8b75aaf534829aa5ee594cf2f962efa313c"
+    },
+    {
+      "path": "src/assets/images/icons/codepen.svg",
+      "sha1": "d86bd9029815ad6954acb2713b160e62f334ad6c"
+    },
+    {
+      "path": "src/assets/images/icons/codesandbox.svg",
+      "sha1": "933fb9ba741d5e6c01ab8662c7e6adba3c39d949"
+    },
+    {
+      "path": "src/assets/images/icons/coffee.svg",
+      "sha1": "bf5d57990897de335f5c299570379121990d2afe"
+    },
+    {
+      "path": "src/assets/images/icons/columns.svg",
+      "sha1": "0428c5d4388a18b3c41c01f1d9f4d00394f2caf5"
+    },
+    {
+      "path": "src/assets/images/icons/command.svg",
+      "sha1": "7834cf66c043f940437deeab45fd9cc869499357"
+    },
+    {
+      "path": "src/assets/images/icons/compass.svg",
+      "sha1": "b872b43512401506ff8c44da487519532409956f"
+    },
+    {
+      "path": "src/assets/images/icons/copy.svg",
+      "sha1": "060ffc80c6e937043c12554144124c824ae119bb"
+    },
+    {
+      "path": "src/assets/images/icons/corner-down-left.svg",
+      "sha1": "567dabfde7ef00a2d37c0eca871d7e76e92bb539"
+    },
+    {
+      "path": "src/assets/images/icons/corner-down-right.svg",
+      "sha1": "a70afc9d25e55bddbe28ed06f19ead5bb353367a"
+    },
+    {
+      "path": "src/assets/images/icons/corner-left-down.svg",
+      "sha1": "44f00482d761e4aa65a00bad31ad540829cb04f8"
+    },
+    {
+      "path": "src/assets/images/icons/corner-left-up.svg",
+      "sha1": "5a801e14dfca5e042ad60045d718c0698861c8fd"
+    },
+    {
+      "path": "src/assets/images/icons/corner-right-down.svg",
+      "sha1": "1aec4f1c388f0f0562bdaaeb8541aa3aef9a5192"
+    },
+    {
+      "path": "src/assets/images/icons/corner-right-up.svg",
+      "sha1": "2e58cc1d0bbf1e92b61854d33ca65fe79eca523b"
+    },
+    {
+      "path": "src/assets/images/icons/corner-up-left.svg",
+      "sha1": "7ef67332023a6277e53cbe5c785852ebccda5d7c"
+    },
+    {
+      "path": "src/assets/images/icons/corner-up-right.svg",
+      "sha1": "afb0cf2522b8ba20621da90b107fbb205d2ab289"
+    },
+    {
+      "path": "src/assets/images/icons/cpu.svg",
+      "sha1": "d60a1b163282ec59ed8475840feafcea1dcabd5c"
+    },
+    {
+      "path": "src/assets/images/icons/credit-card.svg",
+      "sha1": "03e2a532fc13dc3171edea89ec79b99f8d66d5a4"
+    },
+    {
+      "path": "src/assets/images/icons/crop.svg",
+      "sha1": "08ae7713a629ea73a4251befe8003d47158bf31d"
+    },
+    {
+      "path": "src/assets/images/icons/crosshair.svg",
+      "sha1": "8cc782a5d9b8deca94bb11065a35f7658084dd6d"
+    },
+    {
+      "path": "src/assets/images/icons/database.svg",
+      "sha1": "fb1bb4990174b7786921661534731ffdd86886c0"
+    },
+    {
+      "path": "src/assets/images/icons/delete.svg",
+      "sha1": "418cd982779653479640effcf1cb150f2f802e45"
+    },
+    {
+      "path": "src/assets/images/icons/disc.svg",
+      "sha1": "9b174861a30e2398d265275d1ac16053fde27d16"
+    },
+    {
+      "path": "src/assets/images/icons/divide-circle.svg",
+      "sha1": "b225c11c093e037d1cb092c3c3a9a01ec857511e"
+    },
+    {
+      "path": "src/assets/images/icons/divide-square.svg",
+      "sha1": "5f88cbc70ef2c50292d8641f41cc1b295fe32b0b"
+    },
+    {
+      "path": "src/assets/images/icons/divide.svg",
+      "sha1": "2172ad3539eb37dec9fd4a3983c91001bb80c3c0"
+    },
+    {
+      "path": "src/assets/images/icons/dollar-sign.svg",
+      "sha1": "9ff6577d7725eacebfce523150e6365243b61f07"
+    },
+    {
+      "path": "src/assets/images/icons/download-cloud.svg",
+      "sha1": "da4677a56c4299a9c7f7518a259faa111a8c3ed0"
+    },
+    {
+      "path": "src/assets/images/icons/download.svg",
+      "sha1": "aa2b0f11bdd9494839af430972e724e0e189a312"
+    },
+    {
+      "path": "src/assets/images/icons/dribbble.svg",
+      "sha1": "e8488bf8d442493a7ede15eab96a3e8bf04bda00"
+    },
+    {
+      "path": "src/assets/images/icons/droplet.svg",
+      "sha1": "62252141ce2a070f751630315b6452db8374f660"
+    },
+    {
+      "path": "src/assets/images/icons/edit-2.svg",
+      "sha1": "612c1423b78af9224517fcd27742b5f53a1714d2"
+    },
+    {
+      "path": "src/assets/images/icons/edit-3.svg",
+      "sha1": "8d7801c22ba017539612f258ae94b23b0dc01214"
+    },
+    {
+      "path": "src/assets/images/icons/edit.svg",
+      "sha1": "8fe67ff9743ef5ca4accebd2dea21b9ccf85d4e4"
+    },
+    {
+      "path": "src/assets/images/icons/external-link.svg",
+      "sha1": "07516300b66f281be11694795f0d43f2b405cb35"
+    },
+    {
+      "path": "src/assets/images/icons/eye-off.svg",
+      "sha1": "5654050a83051edc36fe70ee22e918aaa30e6a28"
+    },
+    {
+      "path": "src/assets/images/icons/eye.svg",
+      "sha1": "5fd7a50d870f414b55c25164bd6d824f1db21f83"
+    },
+    {
+      "path": "src/assets/images/icons/facebook.svg",
+      "sha1": "b659ad8050589ca8fc3b62ad7c133374d63563f7"
+    },
+    {
+      "path": "src/assets/images/icons/fast-forward.svg",
+      "sha1": "03564720864ad484e7ae587e10fe1ced7a80be77"
+    },
+    {
+      "path": "src/assets/images/icons/feather.svg",
+      "sha1": "61c5813b77d7db1c580755e3b62418cb04e9d993"
+    },
+    {
+      "path": "src/assets/images/icons/figma.svg",
+      "sha1": "90efadd245e1bea5729d803cae1dc33c44bc961b"
+    },
+    {
+      "path": "src/assets/images/icons/file-minus.svg",
+      "sha1": "b9a30b24fc11626b8975273b8a08407a10be359d"
+    },
+    {
+      "path": "src/assets/images/icons/file-plus.svg",
+      "sha1": "f8b5259c70f13ab6e8497b2e20adc5fb666e306b"
+    },
+    {
+      "path": "src/assets/images/icons/file-text.svg",
+      "sha1": "9b753dd9f9dafe1d1a9387e25387d5c38fd8ae3e"
+    },
+    {
+      "path": "src/assets/images/icons/file.svg",
+      "sha1": "7adbfa96811ad44fda96c1b5a880eddc6ce0a18e"
+    },
+    {
+      "path": "src/assets/images/icons/film.svg",
+      "sha1": "6d95c3669393c79fc29cd9f67f16250348e76e70"
+    },
+    {
+      "path": "src/assets/images/icons/filter.svg",
+      "sha1": "1b047740db5e53c0c9ff91c2bda0dcb730b01b29"
+    },
+    {
+      "path": "src/assets/images/icons/flag.svg",
+      "sha1": "74227aecb9c46c5e76a18beca1af8fd396c85eca"
+    },
+    {
+      "path": "src/assets/images/icons/folder-minus.svg",
+      "sha1": "5e1434606d19e5409c982e1f0473d89d3dbff1ac"
+    },
+    {
+      "path": "src/assets/images/icons/folder-plus.svg",
+      "sha1": "141a1dde496927362eac651459ee17e4ce9eeeca"
+    },
+    {
+      "path": "src/assets/images/icons/folder.svg",
+      "sha1": "37a212da9503f8ff4aeb39d046881d571d29a621"
+    },
+    {
+      "path": "src/assets/images/icons/framer.svg",
+      "sha1": "5164eca008d4fa59a134f457c4b16775b2a4200c"
+    },
+    {
+      "path": "src/assets/images/icons/frown.svg",
+      "sha1": "9334484f75779b1cae8c8ec8b43d24de7d6392ce"
+    },
+    {
+      "path": "src/assets/images/icons/gift.svg",
+      "sha1": "f924a23df3a1461740ea9dcc1ec973612a97be5d"
+    },
+    {
+      "path": "src/assets/images/icons/git-branch.svg",
+      "sha1": "24f892e85b49c87b41df212a8cf341fdb5abe319"
+    },
+    {
+      "path": "src/assets/images/icons/git-commit.svg",
+      "sha1": "98d5bd0b9aa7e0d533d8e3c09dd910c6956729d3"
+    },
+    {
+      "path": "src/assets/images/icons/git-merge.svg",
+      "sha1": "a0a1a3b41be325f9baaf98554dd6844e74ba0f9d"
+    },
+    {
+      "path": "src/assets/images/icons/git-pull-request.svg",
+      "sha1": "d41190650b0a38a14d744160d6fe55114dd2ed4e"
+    },
+    {
+      "path": "src/assets/images/icons/github.svg",
+      "sha1": "6f59afed26447cef8e946a0294664f159ae63295"
+    },
+    {
+      "path": "src/assets/images/icons/gitlab.svg",
+      "sha1": "fed80b57115e2a98063560c6fb9668b6bb9c32c5"
+    },
+    {
+      "path": "src/assets/images/icons/globe.svg",
+      "sha1": "3fac009acf47428ee493babdf5d94941d4be2548"
+    },
+    {
+      "path": "src/assets/images/icons/grid.svg",
+      "sha1": "6e3ec0a32f0df9a77eb71f3a16aace0eb49498b2"
+    },
+    {
+      "path": "src/assets/images/icons/hard-drive.svg",
+      "sha1": "1b2e2bc3263211f29685fe9310030b30645d2392"
+    },
+    {
+      "path": "src/assets/images/icons/hash.svg",
+      "sha1": "a23b6388622fe98b54ac8173c8772648c9d31797"
+    },
+    {
+      "path": "src/assets/images/icons/headphones.svg",
+      "sha1": "950d61b922c39da62185e553048090cfc75764c2"
+    },
+    {
+      "path": "src/assets/images/icons/heart.svg",
+      "sha1": "2a374840fd54875ddf867590e0f2ab0c02871fbe"
+    },
+    {
+      "path": "src/assets/images/icons/help-circle.svg",
+      "sha1": "9baecefc0174b764955863370d7ae0d913f850df"
+    },
+    {
+      "path": "src/assets/images/icons/hexagon.svg",
+      "sha1": "46e0847e234a9a76ce2f0d71add652cdd70eef8d"
+    },
+    {
+      "path": "src/assets/images/icons/home.svg",
+      "sha1": "90617be61fdc171f1143eaf08f0d25ee41847240"
+    },
+    {
+      "path": "src/assets/images/icons/image.svg",
+      "sha1": "a2cbb6e837c9bf29fa366b611561a60b8709372a"
+    },
+    {
+      "path": "src/assets/images/icons/inbox.svg",
+      "sha1": "7133b7dbfc94eebaf751db2c98335d193bc04e95"
+    },
+    {
+      "path": "src/assets/images/icons/info.svg",
+      "sha1": "1b845d93f7e81e4c2249e48ff0569d8d303a776e"
+    },
+    {
+      "path": "src/assets/images/icons/instagram.svg",
+      "sha1": "1e213cf71a0b0753c59282981b2a5a82e76891e2"
+    },
+    {
+      "path": "src/assets/images/icons/italic.svg",
+      "sha1": "86d6ced889562bea9c12c1201e39017479e2d92b"
+    },
+    {
+      "path": "src/assets/images/icons/key.svg",
+      "sha1": "5b2cc46bcb230f7bc408a0c4a238d93772a6f4e0"
+    },
+    {
+      "path": "src/assets/images/icons/layers.svg",
+      "sha1": "378fc57bd8674b1b248d69c68df4d13e006cc595"
+    },
+    {
+      "path": "src/assets/images/icons/layout.svg",
+      "sha1": "b0cd011f338673b7e8ef802c05154fc6704c5f50"
+    },
+    {
+      "path": "src/assets/images/icons/life-buoy.svg",
+      "sha1": "0085260b2d32a0e18e3bd3d1608fdea777a9823a"
+    },
+    {
+      "path": "src/assets/images/icons/link-2.svg",
+      "sha1": "7fea01b14582415df95a2c816a5abb8f3baafd05"
+    },
+    {
+      "path": "src/assets/images/icons/link.svg",
+      "sha1": "162f6269035f1be89b0d3f546fc3f3d0df7f319e"
+    },
+    {
+      "path": "src/assets/images/icons/linkedin.svg",
+      "sha1": "0adcb6c5edc74920dfd25c38653e059745e088dc"
+    },
+    {
+      "path": "src/assets/images/icons/list.svg",
+      "sha1": "c6c4858a4fe60225c83ac8a17e68eab5f651d11c"
+    },
+    {
+      "path": "src/assets/images/icons/loader.svg",
+      "sha1": "d3e8e057bb20491f7b6d86370fb797165eec1a5b"
+    },
+    {
+      "path": "src/assets/images/icons/lock.svg",
+      "sha1": "797b155b8dcff378e8953b10d086c71a34af8b15"
+    },
+    {
+      "path": "src/assets/images/icons/log-in.svg",
+      "sha1": "02295cd25efe142088e265f12b9523c635495028"
+    },
+    {
+      "path": "src/assets/images/icons/log-out.svg",
+      "sha1": "059981a62749110e0d47407d6a2303f90e36b48e"
+    },
+    {
+      "path": "src/assets/images/icons/mail.svg",
+      "sha1": "4a32b8ff0beb8104e886d9be36e90edef78e3300"
+    },
+    {
+      "path": "src/assets/images/icons/map-pin.svg",
+      "sha1": "b1c9265765f9423368a614bdb92c8d67ce4ae955"
+    },
+    {
+      "path": "src/assets/images/icons/map.svg",
+      "sha1": "5ab5df261dd2920dee583ccdb6cf503094fcbcd2"
+    },
+    {
+      "path": "src/assets/images/icons/maximize-2.svg",
+      "sha1": "1b877f883d203c3b9a4bdbec3279e5e5de90bfdf"
+    },
+    {
+      "path": "src/assets/images/icons/maximize.svg",
+      "sha1": "043d164f7e1a49fb33e29755249d386768658927"
+    },
+    {
+      "path": "src/assets/images/icons/meh.svg",
+      "sha1": "e12ba133f1f5998906cc6770fc9ea7e3622d245d"
+    },
+    {
+      "path": "src/assets/images/icons/menu.svg",
+      "sha1": "b2e79f83bcd2530ed726fb81161ff42621b1c829"
+    },
+    {
+      "path": "src/assets/images/icons/message-circle.svg",
+      "sha1": "c11d8280745f9ece80b5a1a8ff44979ddbff9fcb"
+    },
+    {
+      "path": "src/assets/images/icons/message-square.svg",
+      "sha1": "ffd1f93e7483c2bde27f519bf4a0ccd9f2cf397f"
+    },
+    {
+      "path": "src/assets/images/icons/mic-off.svg",
+      "sha1": "5f89cacc8603a6c98ca133fb5667dc2dde89a966"
+    },
+    {
+      "path": "src/assets/images/icons/mic.svg",
+      "sha1": "64a55bdaa4da75e1170a9373815bb723256838f2"
+    },
+    {
+      "path": "src/assets/images/icons/minimize-2.svg",
+      "sha1": "d7c4853ac0aaba1b36d77c8141322866f16d97d6"
+    },
+    {
+      "path": "src/assets/images/icons/minimize.svg",
+      "sha1": "6091dbf77449a3e7854ea71cc0052eea75b9e8e6"
+    },
+    {
+      "path": "src/assets/images/icons/minus-circle.svg",
+      "sha1": "8768dfb4c8aaf8b449e73785a14c6a2755424a05"
+    },
+    {
+      "path": "src/assets/images/icons/minus-square.svg",
+      "sha1": "b32313cf467f939de95e610a20137df370cb80d3"
+    },
+    {
+      "path": "src/assets/images/icons/minus.svg",
+      "sha1": "7a6d6ca1e3ce7db933f329d7c712c8fd280e0673"
+    },
+    {
+      "path": "src/assets/images/icons/monitor.svg",
+      "sha1": "5fd1cc2dae6efae580e4dc509e8e057cd9ce1f5b"
+    },
+    {
+      "path": "src/assets/images/icons/moon.svg",
+      "sha1": "c2a437d78318855e75d1a6d6b03a65bd1ae48c2c"
+    },
+    {
+      "path": "src/assets/images/icons/more-horizontal.svg",
+      "sha1": "0c2861ab9dc5e5e7afbcc10a7854c26f97534b3e"
+    },
+    {
+      "path": "src/assets/images/icons/more-vertical.svg",
+      "sha1": "514b4e5c8a3070d578e7ad68a030c1cb4d79ee59"
+    },
+    {
+      "path": "src/assets/images/icons/mouse-pointer.svg",
+      "sha1": "638a2474a50c1111c5347585ca27acdbaff62b81"
+    },
+    {
+      "path": "src/assets/images/icons/move.svg",
+      "sha1": "8be6c7fe5ba5f9238c211207a92977c530b85925"
+    },
+    {
+      "path": "src/assets/images/icons/music.svg",
+      "sha1": "5e0aa86cab09a3af1b32271729c9174872700dc1"
+    },
+    {
+      "path": "src/assets/images/icons/navigation-2.svg",
+      "sha1": "e0c139ce27b8a20cd6bab2c86058daa23ed655d5"
+    },
+    {
+      "path": "src/assets/images/icons/navigation.svg",
+      "sha1": "c27d260f5f172b9022537496bd0d22f667b85727"
+    },
+    {
+      "path": "src/assets/images/icons/octagon.svg",
+      "sha1": "a52649b8fec45f6a4d440d93fe377ecb9b556a8d"
+    },
+    {
+      "path": "src/assets/images/icons/package.svg",
+      "sha1": "c3485755090c6455a0f71eaa053505a4d3946093"
+    },
+    {
+      "path": "src/assets/images/icons/paperclip.svg",
+      "sha1": "02f8115d04b983f2754d50579eb91c0d007298c1"
+    },
+    {
+      "path": "src/assets/images/icons/pause-circle.svg",
+      "sha1": "1f5fe7f462020d929135b4d8cf42727f77fb80b0"
+    },
+    {
+      "path": "src/assets/images/icons/pause.svg",
+      "sha1": "6bf72244c8357a15cdc4e21b49a9eedffbf69a92"
+    },
+    {
+      "path": "src/assets/images/icons/pen-tool.svg",
+      "sha1": "0d70fe5eccba7bae6753a571a9586911d65b9193"
+    },
+    {
+      "path": "src/assets/images/icons/percent.svg",
+      "sha1": "a79a37daaaf24409d2db25850316c525f1c46f04"
+    },
+    {
+      "path": "src/assets/images/icons/phone-call.svg",
+      "sha1": "e366a4b807c560a764f6d26191345c48239c0ff4"
+    },
+    {
+      "path": "src/assets/images/icons/phone-forwarded.svg",
+      "sha1": "76e7d4c08b4e315735684625db43668305e59daa"
+    },
+    {
+      "path": "src/assets/images/icons/phone-incoming.svg",
+      "sha1": "2f353409a34473caca7c60504479a0f9b2236654"
+    },
+    {
+      "path": "src/assets/images/icons/phone-missed.svg",
+      "sha1": "40cab70ad9d600f94b1ef623ed87f239e3aca1fc"
+    },
+    {
+      "path": "src/assets/images/icons/phone-off.svg",
+      "sha1": "5e33b6cb6d0035b44a48ede57f606c560ecd8856"
+    },
+    {
+      "path": "src/assets/images/icons/phone-outgoing.svg",
+      "sha1": "69110b9877872031c2f2e778c7d9085467cd2dd5"
+    },
+    {
+      "path": "src/assets/images/icons/phone.svg",
+      "sha1": "0af78223d43a47bb0079a178b86bc6fb540063fc"
+    },
+    {
+      "path": "src/assets/images/icons/pie-chart.svg",
+      "sha1": "0df59d4d2f5b04b1ffdff6e5c79ded397bec6f14"
+    },
+    {
+      "path": "src/assets/images/icons/play-circle.svg",
+      "sha1": "3be1c9bd9e092a7470f4a61d6d3e1777232a15d8"
+    },
+    {
+      "path": "src/assets/images/icons/play.svg",
+      "sha1": "5105e62f407ef3aeb0097c69f53dcbf3367a4785"
+    },
+    {
+      "path": "src/assets/images/icons/plus-circle.svg",
+      "sha1": "f395b42356aaabc7ca9499a6a7a76248034ed4b2"
+    },
+    {
+      "path": "src/assets/images/icons/plus-square.svg",
+      "sha1": "46091c39718e033aa6468f54ca756440ca62716b"
+    },
+    {
+      "path": "src/assets/images/icons/plus.svg",
+      "sha1": "4b65e49ddca77def6a7b508718a0ec6f3c6f98a6"
+    },
+    {
+      "path": "src/assets/images/icons/pocket.svg",
+      "sha1": "4d2c1cf00272e1ced7dbf468c75ce229321602d5"
+    },
+    {
+      "path": "src/assets/images/icons/power.svg",
+      "sha1": "2f790387c6fe8f4a7172bf6627a097346d66bf1e"
+    },
+    {
+      "path": "src/assets/images/icons/printer.svg",
+      "sha1": "bd7ba0e02061cfa3283710ad6fa56e4f8ffb2632"
+    },
+    {
+      "path": "src/assets/images/icons/radio.svg",
+      "sha1": "33a4de57c50788c7802e4e01088a7db1ea6a253d"
+    },
+    {
+      "path": "src/assets/images/icons/refresh-ccw.svg",
+      "sha1": "b3464fd0e660c797b14da6203e61297cc2f5deed"
+    },
+    {
+      "path": "src/assets/images/icons/refresh-cw.svg",
+      "sha1": "4e246048f916297d287167f7dd173a6725add4f0"
+    },
+    {
+      "path": "src/assets/images/icons/repeat.svg",
+      "sha1": "2e5044ede3d3dac188e5a9d336c36fb48b3478f5"
+    },
+    {
+      "path": "src/assets/images/icons/rewind.svg",
+      "sha1": "4a574606304a28abdb50547333711ca90a728bc7"
+    },
+    {
+      "path": "src/assets/images/icons/rotate-ccw.svg",
+      "sha1": "0bfd5d376d5faf7f2869a553d8a74580de07ccf3"
+    },
+    {
+      "path": "src/assets/images/icons/rotate-cw.svg",
+      "sha1": "6fa159efdbef6546c775fc81effec90bea03f960"
+    },
+    {
+      "path": "src/assets/images/icons/rss.svg",
+      "sha1": "f435b51bd2fd4238120800cfddffc38360c83a8b"
+    },
+    {
+      "path": "src/assets/images/icons/save.svg",
+      "sha1": "4bde82346c1225413fc9498c4666dd5f93668d23"
+    },
+    {
+      "path": "src/assets/images/icons/scissors.svg",
+      "sha1": "ea9ba5a35edfbc3a13896354efead827ee9bcd91"
+    },
+    {
+      "path": "src/assets/images/icons/search.svg",
+      "sha1": "2158fc25174941be982215034b68141b89e96ee3"
+    },
+    {
+      "path": "src/assets/images/icons/send.svg",
+      "sha1": "ff5998a5ec1eedb451689b7f781f6f73507b48dc"
+    },
+    {
+      "path": "src/assets/images/icons/server.svg",
+      "sha1": "deaff401de8241b113fe09d7362ae5d5736b8ce3"
+    },
+    {
+      "path": "src/assets/images/icons/settings.svg",
+      "sha1": "dced5985f19b9ee64ff7dbb01fa5ecd9aa1bee23"
+    },
+    {
+      "path": "src/assets/images/icons/share-2.svg",
+      "sha1": "f88b235f9c08aef827b5a5963af9f4fa5de813f7"
+    },
+    {
+      "path": "src/assets/images/icons/share.svg",
+      "sha1": "ef89198e8afc803e8943f8e57702d9bdfcea1e63"
+    },
+    {
+      "path": "src/assets/images/icons/shield-off.svg",
+      "sha1": "a171042f17b57d8763a92c853bfacb003fd1eae6"
+    },
+    {
+      "path": "src/assets/images/icons/shield.svg",
+      "sha1": "54a05e57ad5a37d8d6015135b942c0b02e27bf6a"
+    },
+    {
+      "path": "src/assets/images/icons/shopping-bag.svg",
+      "sha1": "9ea017ceb54dffdf2c2b59a8920f72628f3aabb4"
+    },
+    {
+      "path": "src/assets/images/icons/shopping-cart.svg",
+      "sha1": "b727e961e9f1ebd0b768e2d8643ab1fa0d439056"
+    },
+    {
+      "path": "src/assets/images/icons/shuffle.svg",
+      "sha1": "f9de21a0643fd5ce1f05afaf81a1f9df8ee250ad"
+    },
+    {
+      "path": "src/assets/images/icons/sidebar.svg",
+      "sha1": "85402f8f37a35261b8af8868c77ff32df9f253db"
+    },
+    {
+      "path": "src/assets/images/icons/skip-back.svg",
+      "sha1": "66977c6cc27f7a11f9ab8f1f53e5cd0606aba510"
+    },
+    {
+      "path": "src/assets/images/icons/skip-forward.svg",
+      "sha1": "10a6c8f8e8c2c62c00567927d89731411f64a207"
+    },
+    {
+      "path": "src/assets/images/icons/slack.svg",
+      "sha1": "e23ef9f2c311e6efd9a61e8d0037f24815bf5fc1"
+    },
+    {
+      "path": "src/assets/images/icons/slash.svg",
+      "sha1": "fbb61e05ea750be1989d54eb10984a004a2a91c3"
+    },
+    {
+      "path": "src/assets/images/icons/sliders.svg",
+      "sha1": "48e9db4c346e4d0640d6e0bbeab03e2951df3575"
+    },
+    {
+      "path": "src/assets/images/icons/smartphone.svg",
+      "sha1": "848296ef71c17d3fec0773a847043bc7836f9501"
+    },
+    {
+      "path": "src/assets/images/icons/smile.svg",
+      "sha1": "b582c25f01aea6570830ca8741d64eac73f74038"
+    },
+    {
+      "path": "src/assets/images/icons/speaker.svg",
+      "sha1": "24edb3dc90a7e1c6e163d819d26a3cffa6303911"
+    },
+    {
+      "path": "src/assets/images/icons/square.svg",
+      "sha1": "06fcfc760e319b2a1001165d6b1a6b2a42bac4e6"
+    },
+    {
+      "path": "src/assets/images/icons/star.svg",
+      "sha1": "87caad83482e4456a2dc43255c84ebc483cd60f4"
+    },
+    {
+      "path": "src/assets/images/icons/stop-circle.svg",
+      "sha1": "f417c326c4505df9bfa1b5c000447a97b17aa3b6"
+    },
+    {
+      "path": "src/assets/images/icons/sun.svg",
+      "sha1": "3afeed6114c8f832e116aa18ee1d4446194bb16b"
+    },
+    {
+      "path": "src/assets/images/icons/sunrise.svg",
+      "sha1": "34fb8806a43b51669356de60c9734a2d30a8936e"
+    },
+    {
+      "path": "src/assets/images/icons/sunset.svg",
+      "sha1": "b482fac0c7b2b88ebae2f1495a51bae0230e9513"
+    },
+    {
+      "path": "src/assets/images/icons/table.svg",
+      "sha1": "8d33b92bdb7cd8ec4278a1b3e87860eb02ad1d22"
+    },
+    {
+      "path": "src/assets/images/icons/tablet.svg",
+      "sha1": "9ad9a2816921e1501ece31e210cec9d3c5e68eea"
+    },
+    {
+      "path": "src/assets/images/icons/tag.svg",
+      "sha1": "b6b8741a37e4fe2854603dd3ea6aae9411e1e9d8"
+    },
+    {
+      "path": "src/assets/images/icons/target.svg",
+      "sha1": "d69b3ccb29442289d0180273e4f0afb28220df5f"
+    },
+    {
+      "path": "src/assets/images/icons/terminal.svg",
+      "sha1": "f9522c8eb6d7607b5a129121ab7f7534a908e997"
+    },
+    {
+      "path": "src/assets/images/icons/thermometer.svg",
+      "sha1": "40ff62c802afd56d75aa69c72545a222a683fa2b"
+    },
+    {
+      "path": "src/assets/images/icons/thumbs-down.svg",
+      "sha1": "2069f20e965e0af6e8f66bd4eb0512e167ad9640"
+    },
+    {
+      "path": "src/assets/images/icons/thumbs-up.svg",
+      "sha1": "a47544585ec1483b894fc529c78d1bdf78d9faa8"
+    },
+    {
+      "path": "src/assets/images/icons/toggle-left.svg",
+      "sha1": "6427927e66933fd563ff352c6cad960d25ed0c7d"
+    },
+    {
+      "path": "src/assets/images/icons/toggle-right.svg",
+      "sha1": "c4afd6950f2352cc27af4d6567e43bffd95dfe75"
+    },
+    {
+      "path": "src/assets/images/icons/tool.svg",
+      "sha1": "32ed50d95d02cd11ccda2c9cccf61c15c4e45054"
+    },
+    {
+      "path": "src/assets/images/icons/trash-2.svg",
+      "sha1": "06dcb22ccbb3433ac224917eee601666cf6d4645"
+    },
+    {
+      "path": "src/assets/images/icons/trash.svg",
+      "sha1": "2e74c880ab1bd86c2517e18516f26ec3e0a842ca"
+    },
+    {
+      "path": "src/assets/images/icons/trello.svg",
+      "sha1": "010b8844ee15b17ca06eb0934ce8a5d8e56a4ec3"
+    },
+    {
+      "path": "src/assets/images/icons/trending-down.svg",
+      "sha1": "deff01eca31b9c83f1f015cd04da927390f28bd8"
+    },
+    {
+      "path": "src/assets/images/icons/trending-up.svg",
+      "sha1": "9725faa743afb346563589d72a830f5fd70bb004"
+    },
+    {
+      "path": "src/assets/images/icons/triangle.svg",
+      "sha1": "a5ea2906dcd1319a834adc8b730079fafdfa5354"
+    },
+    {
+      "path": "src/assets/images/icons/truck.svg",
+      "sha1": "2113f4dc33d2123ab52ac1aa3629b5923c670e15"
+    },
+    {
+      "path": "src/assets/images/icons/tv.svg",
+      "sha1": "fd6c0ab93aae9cbd589c3aa09ef422ae45162af4"
+    },
+    {
+      "path": "src/assets/images/icons/twitch.svg",
+      "sha1": "05a7050b394c460c82bed487fc2d0810e3492396"
+    },
+    {
+      "path": "src/assets/images/icons/twitter.svg",
+      "sha1": "061f13dad02de09f1b4c14ad8e514ba6e3b4a75c"
+    },
+    {
+      "path": "src/assets/images/icons/type.svg",
+      "sha1": "b4660771a244b7584060bb75c9e230038a8d2173"
+    },
+    {
+      "path": "src/assets/images/icons/umbrella.svg",
+      "sha1": "8ca378bf800734b10050414e7398f37dcbb20177"
+    },
+    {
+      "path": "src/assets/images/icons/underline.svg",
+      "sha1": "230a05ff41c05fed6ce421bf87c2972d16f3e931"
+    },
+    {
+      "path": "src/assets/images/icons/unlock.svg",
+      "sha1": "4cfaa5b62835e35cf844f3e65564f2d013600d3c"
+    },
+    {
+      "path": "src/assets/images/icons/upload-cloud.svg",
+      "sha1": "214415634c8310d825a64dfb3f71dc86c9477c06"
+    },
+    {
+      "path": "src/assets/images/icons/upload.svg",
+      "sha1": "51e0bfb349efd46da25bd8006cf41e7688aa7544"
+    },
+    {
+      "path": "src/assets/images/icons/user-check.svg",
+      "sha1": "158c59d4b0a7894af3dccaa2e5095a2a0e3fae57"
+    },
+    {
+      "path": "src/assets/images/icons/user-minus.svg",
+      "sha1": "4bf1f963a555049fefb01aa6699ef7857173a73f"
+    },
+    {
+      "path": "src/assets/images/icons/user-plus.svg",
+      "sha1": "62c1a3d8222767cef19ba0b3b1887932297cad15"
+    },
+    {
+      "path": "src/assets/images/icons/user-x.svg",
+      "sha1": "b0df1c97ea23240678c18f47e028ec9c8d78ea49"
+    },
+    {
+      "path": "src/assets/images/icons/user.svg",
+      "sha1": "bd1602967f125f2b5a568f6292a4e15d5cedacfe"
+    },
+    {
+      "path": "src/assets/images/icons/users.svg",
+      "sha1": "d274f4c5db46a1a9c053e09fd7e58178a9bf3586"
+    },
+    {
+      "path": "src/assets/images/icons/video-off.svg",
+      "sha1": "980b963c3b9e40349e57b8577e061860e20cc772"
+    },
+    {
+      "path": "src/assets/images/icons/video.svg",
+      "sha1": "908fea333a52ef108fdeb6210c2b2664372167c2"
+    },
+    {
+      "path": "src/assets/images/icons/voicemail.svg",
+      "sha1": "5f33f7a7dc6653a438690af1d99e1161ba3c98e9"
+    },
+    {
+      "path": "src/assets/images/icons/volume-1.svg",
+      "sha1": "2f732e2677b9429e8926d927a39fddf1c1602648"
+    },
+    {
+      "path": "src/assets/images/icons/volume-2.svg",
+      "sha1": "83a4653287f4095dfdd61530cd69e2fbddab3c75"
+    },
+    {
+      "path": "src/assets/images/icons/volume-x.svg",
+      "sha1": "d111c925e9795f94638fe14627c602150d511bd2"
+    },
+    {
+      "path": "src/assets/images/icons/volume.svg",
+      "sha1": "2b0dde67b6761294cd683be02586cf0aa81e87f9"
+    },
+    {
+      "path": "src/assets/images/icons/watch.svg",
+      "sha1": "0578b9a233209402edcb4947a58f745eefb961df"
+    },
+    {
+      "path": "src/assets/images/icons/wifi-off.svg",
+      "sha1": "84c13343755c7073b8d98b51812ec6ef6dbc9f32"
+    },
+    {
+      "path": "src/assets/images/icons/wifi.svg",
+      "sha1": "8cddd9780c678369bae5d049e19e047ec0dc8631"
+    },
+    {
+      "path": "src/assets/images/icons/wind.svg",
+      "sha1": "cf9010fc4e76a98e9ce8c6ad2eebab747673aa72"
+    },
+    {
+      "path": "src/assets/images/icons/x-circle.svg",
+      "sha1": "a063f44e65e91fdfa7fb882d515a2793fe0701f8"
+    },
+    {
+      "path": "src/assets/images/icons/x-octagon.svg",
+      "sha1": "0f77ab4149f2bb0cda81a8e15ef72b8408b81fdb"
+    },
+    {
+      "path": "src/assets/images/icons/x-square.svg",
+      "sha1": "e1b92b74e428eec1f41914664b39e3a307d1ba64"
+    },
+    {
+      "path": "src/assets/images/icons/x.svg",
+      "sha1": "5feb2327c6927ded2118e6e37a57dc8ef1b64676"
+    },
+    {
+      "path": "src/assets/images/icons/youtube.svg",
+      "sha1": "01fe0cdddb4e0483ed704bb68469ff3def69b081"
+    },
+    {
+      "path": "src/assets/images/icons/zap-off.svg",
+      "sha1": "21028c26df934c34ac9041bb4a9c638db7b256cb"
+    },
+    {
+      "path": "src/assets/images/icons/zap.svg",
+      "sha1": "909487cc8b363d79ba8e6a672604481c99cdd4d0"
+    },
+    {
+      "path": "src/assets/images/icons/zoom-in.svg",
+      "sha1": "bfdefd0b172f3cabd0ea1bf0695128c64d6bb5be"
+    },
+    {
+      "path": "src/assets/images/icons/zoom-out.svg",
+      "sha1": "0713a1d7717ad886da2b5109a3cab8ef0c541ff1"
+    }
+  ]
+}

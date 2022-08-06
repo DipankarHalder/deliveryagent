@@ -15,6 +15,7 @@ import fonts from '../../components/config/fonts';
 export const DashboardScreen = () => {
   const navigation = useNavigation();
   const { authLogout, userProfile } = useContext(CoreContext);
+  const dataUser = userProfile && userProfile.data;
 
   const checkIndexIsEven = n => {
     return n % 2 === 0;
@@ -35,7 +36,7 @@ export const DashboardScreen = () => {
           <View style={styles.mainProfileName}>
             <Text style={styles.mainProftext}>Hello</Text>
             <Text style={styles.mainProfName}>
-              {userProfile && userProfile.data.name.split(' ')[0]}
+              {dataUser && dataUser.name.split(' ')[0]}
             </Text>
           </View>
           <Pressable onPress={authLogout} style={styles.logoutBtn}>

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   authentication,
@@ -73,7 +73,10 @@ export const CoreProvider = ({ children }) => {
   const [userProfile, setUserProfile] = useState(null);
   const getUserProfileInformation = () => {
     getUserProfile()
-      .then(res => setUserProfile(res.data))
+      .then(res => {
+        console.log(res.data);
+        setUserProfile(res.data);
+      })
       .catch(err => console.log(err));
   };
 
@@ -82,14 +85,14 @@ export const CoreProvider = ({ children }) => {
    *  using post api
    */
   const [userProdList, setUserProdList] = useState(null);
-  const getAllProductList = payload => {
+  const getAllProductList = useCallback(payload => {
     listOfProducts(payload)
       .then(res => {
         console.log(res.data);
         setUserProdList(res.data);
       })
       .catch(err => console.log(err));
-  };
+  }, []);
 
   useEffect(() => {
     isAuthentication();

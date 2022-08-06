@@ -44,8 +44,13 @@ export const OrderDetailsScreen = ({ route }) => {
               </Text>
             </View>
             <View style={styles.productAllDesc}>
+              <Text style={styles.segmentHeading}>Order &nbsp;Details</Text>
+              <View style={styles.orderDescItem}>
+                <Text style={styles.proLevel}>Order No. :</Text>
+                <Text style={styles.proDetls}>JUC000874</Text>
+              </View>
               <View style={styles.prodescItem}>
-                <Text style={styles.proLevel}>Name :</Text>
+                <Text style={styles.proLevel}>Product Name :</Text>
                 <Text style={styles.proDetls}>Papaya Juice</Text>
               </View>
               <View style={styles.prodescItem}>
@@ -59,12 +64,8 @@ export const OrderDetailsScreen = ({ route }) => {
           <Text style={styles.segmentHeading}>Ratings</Text>
         </View> */}
         <View style={styles.segmentInformation}>
-          <Text style={styles.segmentHeading}>Order &nbsp;Details</Text>
+          <Text style={styles.segmentHeading}>Delivery &nbsp;Details</Text>
           <View style={styles.orderDetails}>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Order No. :</Text>
-              <Text style={styles.proDetls}>JUC000874</Text>
-            </View>
             <View style={styles.orderDescItem}>
               <Text style={styles.proLevel}>Status :</Text>
               <Text
@@ -240,6 +241,7 @@ const styles = StyleSheet.create({
     color: colors.green,
     textTransform: 'uppercase',
     fontFamily: fonts.bold,
+    width: '100%',
   },
   orderDetails: {
     display: 'flex',

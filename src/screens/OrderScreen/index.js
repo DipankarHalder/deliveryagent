@@ -7,89 +7,150 @@ import {
   Image,
   Text,
   View,
+  TouchableOpacity,
 } from 'react-native';
+import moment from 'moment';
 import { useNavigation } from '@react-navigation/native';
 import { CoreContext } from '../../services/context/coreContext';
-import DatePicker from 'react-native-datepicker';
+import { Dropdown } from 'react-native-element-dropdown';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
 
 import colors from '../../components/config/colors';
 import fonts from '../../components/config/fonts';
-
 import Calendar from '../../assets/images/icons/calendar.svg';
+
+const dataList = [
+  { label: 'Asigned', value: 'ASSIGNED_DELIVERY_AGENT' },
+  { label: 'Out for delivery', value: 'OUT_FOR_DELIVERY' },
+  { label: 'Delivered', value: 'DELIVERED' },
+];
 
 export const OrderScreen = () => {
   const navigation = useNavigation();
   const { getAllProductList, userProdList } = useContext(CoreContext);
-  const [date, setDate] = useState(new Date());
+  const productsData = userProdList && userProdList.data;
+
+  const [mainDate, setMainDate] = useState(
+    moment(new Date()).format('YYYY-MM-DD'),
+  );
+  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
+  const [dropDownValue, setDropDownValue] = useState(null);
 
   const detailsItem = id => {
     navigation.navigate('OrderDetails', { id: id });
+  };
+
+  const handleDatePicker = () => {
+    setDatePickerVisibility(!isDatePickerVisible);
+  };
+
+  const handleConfirm = date => {
+    setMainDate(moment(date).format('YYYY-MM-DD'));
+    setDatePickerVisibility(false);
   };
 
   useEffect(() => {
     const payload = {
       page: 1,
       perPage: 10,
-      deliveryDate: '2022-07-26',
-      status: 'ASSIGNED_DELIVERY_AGENT',
+      deliveryDate: '2022-07-27', //mainDate
+      status: dropDownValue,
     };
+    console.log(payload);
     getAllProductList(payload);
-  }, [date, getAllProductList]);
+  }, [dropDownValue, getAllProductList, mainDate]);
 
   useEffect(() => {
     LogBox.ignoreLogs(['Animated: `useNativeDriver`']);
   }, []);
 
   return (
-    <ScrollView style={styles.screenWrapper}>
+    <ScrollView nestedScrollEnabled={true} style={styles.screenWrapper}>
       <View style={styles.container}>
         <Text style={styles.mainHeading}>Delivery Product Lists</Text>
         <Text style={styles.subHeading}>
           You have to collect the following products from the booth.
         </Text>
         <View style={styles.datePickerCover}>
-          <Text style={styles.datetext}>Search with Date</Text>
-          <DatePicker
-            date={date}
-            mode="date"
-            placeholder="Select Date"
-            format="YYYY-MM-DD"
-            confirmBtnText="Confirm"
-            cancelBtnText="Cancel"
-            useNativeDriver={true}
-            iconComponent={
-              <Calendar width={24} height={24} stroke={colors.gray} />
-            }
-            customStyles={{
-              dateInput: {
-                borderWidth: 0,
-                textAlign: 'left',
-                fontFamily: fonts.regular,
-              },
-            }}
-            style={styles.datapickerItem}
-            onDateChange={dateItem => setDate(dateItem)}
-          />
+          <Text style={styles.datetext}>Filter with status and date</Text>
+          <View style={styles.filterCover}>
+            <View style={styles.statusFilter}>
+              <Text style={styles.filterText}>Status:</Text>
+              <View style={styles.dropDownCover}>
+                <Dropdown
+                  style={styles.dropdownCov}
+                  selectedTextStyle={styles.selectedTextStyle}
+                  inputSearchStyle={styles.inputSearchStyle}
+                  data={dataList}
+                  maxHeight={300}
+                  labelField="label"
+                  valueField="value"
+                  searchPlaceholder="Search..."
+                  value={dropDownValue}
+                  fontFamily={fonts.regular}
+                  onChange={item => {
+                    setDropDownValue(item.value);
+                  }}
+                />
+              </View>
+            </View>
+            <View style={styles.dateCoverDisplay}>
+              <Text style={styles.filterText}>Date:</Text>
+              <TouchableOpacity
+                style={styles.displayDate}
+                onPress={handleDatePicker}>
+                <Text>{mainDate}</Text>
+                <Calendar width={24} height={24} stroke={colors.gray} />
+              </TouchableOpacity>
+              <DateTimePickerModal
+                isVisible={isDatePickerVisible}
+                mode="date"
+                onConfirm={handleConfirm}
+                onCancel={handleDatePicker}
+              />
+            </View>
+          </View>
         </View>
         <View style={styles.deliveryList}>
-          {userProdList &&
-            userProdList.data.map(item => (
+          {productsData &&
+            productsData.map(item => (
               <Pressable
                 style={styles.deliveryItem}
                 onPress={() => detailsItem(item.id)}
                 key={item.id}>
                 <Image
                   style={styles.productImg}
-                  source={require('../../assets/images/icon.png')}
+                  source={{ uri: item.product.mainImage.url }}
                 />
                 <View style={styles.productListDesc}>
-                  <Text style={styles.proMainName}>{item.secondaryId}</Text>
-                  <Text style={styles.subtext}>Price: Rs. {item.price}/-</Text>
-                  <Text style={styles.weighttext}>
-                    {item.quantity} items,{' '}
+                  <Text style={styles.proMainName}>{item.product.name}</Text>
+                  <Text style={styles.prodPrice}>
+                    <Text style={styles.prodSubText}>Price:</Text>
+                    &nbsp; Rs. {item.price}/-
+                  </Text>
+                  <Text style={styles.prodSize}>
+                    <Text style={styles.prodSubText}>Size:</Text>
+                    &nbsp;&nbsp; {item.product.sizeMl} ml
+                  </Text>
+                  <Text
+                    style={[
+                      styles.prodStatus,
+                      {
+                        color:
+                          item.status === 'ASSIGNED_DELIVERY_AGENT'
+                            ? colors.lgray
+                            : item.status === 'OUT_FOR_DELIVERY'
+                            ? colors.orange
+                            : colors.green,
+                      },
+                    ]}>
+                    <Text style={styles.prodSubText}>Status:</Text>
+                    &nbsp;{' '}
                     {item.status === 'ASSIGNED_DELIVERY_AGENT'
                       ? 'Assigned'
-                      : item.status}
+                      : item.status === 'OUT_FOR_DELIVERY'
+                      ? 'Out for Delivery'
+                      : 'Delivered'}
                   </Text>
                 </View>
               </Pressable>
@@ -128,14 +189,80 @@ const styles = StyleSheet.create({
   },
   datePickerCover: {
     display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
     marginBottom: 4,
   },
   datetext: {
     fontSize: 15,
+    color: colors.black,
+    fontFamily: fonts.regular,
+    marginBottom: 10,
+  },
+  filterCover: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    marginBottom: 10,
+  },
+  statusFilter: {
+    marginLeft: 0,
+    width: '48.5%',
+  },
+  filterText: {
+    fontSize: 13,
     color: colors.gray,
+    fontFamily: fonts.regular,
+    marginBottom: 2,
+  },
+  dropdownCov: {
+    color: colors.gray,
+    backgroundColor: colors.white,
+    borderRadius: 4,
+    paddingHorizontal: 16,
+    paddingVertical: 4,
+    shadowOffset: { width: 1, height: 2 },
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.06,
+    shadowRadius: 2,
+  },
+  placeholderStyle: {
+    fontSize: 14,
+    color: colors.gray,
+    fontFamily: fonts.regular,
+  },
+  selectedTextStyle: {
+    fontSize: 14,
+  },
+  inputSearchStyle: {
+    height: 36,
+    fontSize: 14,
+    borderRadius: 4,
+  },
+  dateCoverDisplay: {
+    marginLeft: '3%',
+    width: '48.5%',
+  },
+  displayDate: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: colors.white,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    borderRadius: 4,
+    shadowOffset: { width: 1, height: 2 },
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.06,
+    shadowRadius: 2,
+  },
+  mainDateDisplay: {
+    marginRight: 10,
+    marginTop: 2,
+    fontSize: 14,
+    color: colors.black,
     fontFamily: fonts.regular,
   },
   datapickerItem: {
@@ -155,8 +282,8 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   productImg: {
-    width: 70,
-    height: 70,
+    width: 90,
+    height: 90,
     borderRadius: 50,
     marginRight: 16,
     backgroundColor: colors.gray,
@@ -168,18 +295,27 @@ const styles = StyleSheet.create({
   proMainName: {
     fontSize: 16,
     color: colors.black,
-    fontFamily: fonts.regular,
-    marginTop: 1,
+    fontFamily: fonts.bold,
+    marginTop: 3,
+    marginBottom: 8,
   },
-  subtext: {
+  prodPrice: {
+    fontSize: 13,
+    color: colors.black,
+    fontFamily: fonts.bold,
+  },
+  prodSize: {
+    fontSize: 13,
+    color: colors.black,
+    fontFamily: fonts.bold,
+  },
+  prodStatus: {
+    fontSize: 13,
+    fontFamily: fonts.bold,
+  },
+  prodSubText: {
     fontSize: 13,
     color: colors.gray,
-    fontFamily: fonts.regular,
-    marginBottom: 10,
-  },
-  weighttext: {
-    fontSize: 13,
-    color: colors.green,
     fontFamily: fonts.regular,
   },
 });

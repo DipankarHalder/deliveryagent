@@ -8,6 +8,7 @@ export const CustomInput = ({
   labelText,
   placeholderText,
   value,
+  editable,
   setValue,
   secureText,
 }) => {
@@ -17,6 +18,7 @@ export const CustomInput = ({
       <View style={styles.inputCover}>
         <TextInput
           value={value}
+          editable={editable}
           onChangeText={setValue}
           placeholder={placeholderText}
           style={styles.inputField}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {
   StyleSheet,
@@ -9,112 +9,170 @@ import {
   Image,
 } from 'react-native';
 
+import { CoreContext } from '../../services/context/coreContext';
 import colors from '../../components/config/colors';
 import fonts from '../../components/config/fonts';
-
 import ChevronLeft from '../../assets/images/icons/chevron-left.svg';
 
 export const OrderDetailsScreen = ({ route }) => {
+  const { userOrderItem, getOrderItem } = useContext(CoreContext);
+  const proDetailsData = userOrderItem && userOrderItem.data;
   const navigation = useNavigation();
 
   const backNavigation = () => {
     navigation.goBack();
   };
 
+  useEffect(() => {
+    const payload = {
+      id: route.params.id,
+    };
+    getOrderItem(payload);
+  }, [getOrderItem, route.params.id]);
+
   return (
     <ScrollView style={styles.screenWrapper}>
       <View style={styles.container}>
         <Pressable onPress={() => backNavigation()} style={styles.backbtn}>
           <ChevronLeft width={24} height={24} stroke={colors.gray} />
-          <Text style={styles.backText}>Order Summery</Text>
+          <Text style={styles.backText}>Order Summary</Text>
         </Pressable>
-        <View style={styles.productDetyailsCover}>
-          <View style={styles.productProfile}>
-            <Image
-              style={styles.productImg}
-              source={require('../../assets/images/icon.png')}
-            />
-            <View style={styles.productListDesc}>
-              <Text style={styles.productDetailsName}>
-                {route.params.id} - Product Details Name
-              </Text>
-              <Text style={styles.productDetailsPriceLabel}>
-                Price: &nbsp;&nbsp;
-                <Text style={styles.productDetailsPrice}>Rs. 125</Text>
-              </Text>
+        {proDetailsData ? (
+          <View>
+            <View style={styles.productDetyailsCover}>
+              <View style={styles.productProfile}>
+                <Image
+                  style={styles.productImg}
+                  source={{ uri: proDetailsData.product.mainImage.url }}
+                />
+                <View style={styles.productListDesc}>
+                  <Text style={styles.productDetailsName}>
+                    {proDetailsData.product.name}
+                  </Text>
+                  <Text style={styles.productDetailsPriceLabel}>
+                    Price: &nbsp;
+                    <Text style={styles.productDetailsPrice}>
+                      Rs. {proDetailsData.price}/-
+                    </Text>
+                  </Text>
+                </View>
+              </View>
             </View>
             <View style={styles.productAllDesc}>
               <Text style={styles.segmentHeading}>Order &nbsp;Details</Text>
-              <View style={styles.orderDescItem}>
+              <View style={styles.prodescItem}>
                 <Text style={styles.proLevel}>Order No. :</Text>
-                <Text style={styles.proDetls}>JUC000874</Text>
+                <Text style={styles.proDetls}>
+                  {proDetailsData.secondaryId}
+                </Text>
               </View>
               <View style={styles.prodescItem}>
-                <Text style={styles.proLevel}>Product Name :</Text>
-                <Text style={styles.proDetls}>Papaya Juice</Text>
+                <Text style={styles.proLevel}>Type :</Text>
+                <Text
+                  style={[
+                    styles.proDetls,
+                    {
+                      color:
+                        proDetailsData.product.type === 'SINGLE'
+                          ? colors.orange
+                          : colors.green,
+                      fontFamily: fonts.bold,
+                    },
+                  ]}>
+                  {proDetailsData.product.type === 'SINGLE'
+                    ? 'Single'
+                    : 'Bundle'}
+                </Text>
               </View>
               <View style={styles.prodescItem}>
                 <Text style={styles.proLevel}>Size :</Text>
-                <Text style={styles.proDetls}>500 ml canne</Text>
+                <Text style={styles.proDetls}>
+                  {proDetailsData.product.sizeMl} ml
+                </Text>
+              </View>
+              <View style={styles.prodescItem}>
+                <Text style={styles.proLevel}>Quantity :</Text>
+                <Text style={styles.proDetls}>
+                  {proDetailsData.quantity > 1
+                    ? `${proDetailsData.quantity} bottles`
+                    : `${proDetailsData.quantity} bottle`}
+                </Text>
+              </View>
+            </View>
+            <View style={styles.segmentInformation}>
+              <Text style={styles.segmentHeading}>Delivery &nbsp;Details</Text>
+              <View style={styles.orderDetails}>
+                <View style={styles.orderDescItem}>
+                  <Text style={styles.proLevel}>Status :</Text>
+                  <Text
+                    style={[
+                      styles.proDetls,
+                      {
+                        color:
+                          proDetailsData.status === 'ASSIGNED_DELIVERY_AGENT'
+                            ? colors.lgray
+                            : proDetailsData.status === 'OUT_FOR_DELIVERY'
+                            ? colors.orange
+                            : colors.green,
+                        fontFamily: fonts.bold,
+                      },
+                    ]}>
+                    {proDetailsData.status === 'ASSIGNED_DELIVERY_AGENT'
+                      ? 'Assigned'
+                      : proDetailsData.status === 'OUT_FOR_DELIVERY'
+                      ? 'Out for Delivery'
+                      : 'Delivered'}
+                  </Text>
+                </View>
+                <View style={styles.orderDescItem}>
+                  <Text style={styles.proLevel}>Date :</Text>
+                  <Text style={styles.proDetls}>
+                    {proDetailsData.deliveryDate}
+                  </Text>
+                </View>
+                {/* <View style={styles.orderImage}>
+                  <Image
+                    style={styles.deliveredImage}
+                    source={require('../../assets/images/delivered.jpeg')}
+                  />
+                </View> */}
+              </View>
+            </View>
+            <View style={styles.segmentInformation}>
+              <Text style={styles.segmentHeading}>Customer &nbsp;Details</Text>
+              <View style={styles.orderDetails}>
+                <View style={styles.orderDescItem}>
+                  <Text style={styles.proLevel}>Name :</Text>
+                  <Text style={styles.proDetls}>
+                    {proDetailsData.user.name}
+                  </Text>
+                </View>
+                <View style={styles.orderDescItem}>
+                  <Text style={styles.proLevel}>Phone :</Text>
+                  <Text style={styles.proDetls}>
+                    {proDetailsData.user.phone}
+                  </Text>
+                </View>
+                <View style={styles.orderDescItem}>
+                  <Text style={styles.proLevel}>Address :</Text>
+                  <Text style={styles.proDetls}>
+                    {proDetailsData.address.flatNo},{' '}
+                    {proDetailsData.address.deliveryLocation},{' '}
+                    {proDetailsData.address.locality}
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
-        </View>
-        {/* <View style={styles.segmentInformation}>
-          <Text style={styles.segmentHeading}>Ratings</Text>
-        </View> */}
-        <View style={styles.segmentInformation}>
-          <Text style={styles.segmentHeading}>Delivery &nbsp;Details</Text>
-          <View style={styles.orderDetails}>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Status :</Text>
-              <Text
-                style={[
-                  styles.proDetls,
-                  {
-                    color: colors.orange,
-                    fontFamily: fonts.bold,
-                  },
-                ]}>
-                On the way
-              </Text>
-            </View>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Date :</Text>
-              <Text style={styles.proDetls}>December 12, 2022</Text>
-            </View>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Payment :</Text>
-              <Text style={styles.proDetls}>GooglePay</Text>
-            </View>
-            <View style={styles.orderImage}>
-              <Image
-                style={styles.deliveredImage}
-                source={require('../../assets/images/delivered.jpeg')}
-              />
-            </View>
+        ) : (
+          <View style={styles.imgEmpty}>
+            <Image
+              style={styles.emptyImages}
+              source={require('../../assets/images/empty-cart.png')}
+            />
+            <Text style={styles.ctempty}>Container empty</Text>
           </View>
-        </View>
-        <View style={styles.segmentInformation}>
-          <Text style={styles.segmentHeading}>Customer &nbsp;Details</Text>
-          <View style={styles.orderDetails}>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Name :</Text>
-              <Text style={styles.proDetls}>Abhishek Paul</Text>
-            </View>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Phone :</Text>
-              <Text style={styles.proDetls}>9803456702</Text>
-            </View>
-            <View style={styles.orderDescItem}>
-              <Text style={styles.proLevel}>Address :</Text>
-              <Text style={styles.proDetls}>
-                18/2, Manjunath Nilaya, 1st B Main Road, Koramangala 8th Block,
-                Karnataka - 560095.
-              </Text>
-            </View>
-          </View>
-        </View>
+        )}
       </View>
     </ScrollView>
   );
@@ -148,10 +206,10 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   backText: {
-    fontSize: 16,
+    fontSize: 13,
     color: colors.gray,
     marginLeft: 10,
-    fontFamily: fonts.regular,
+    fontFamily: fonts.bold,
   },
   productProfile: {
     display: 'flex',
@@ -172,11 +230,11 @@ const styles = StyleSheet.create({
   productDetailsName: {
     fontSize: 18,
     color: colors.black,
-    fontFamily: fonts.regular,
+    fontFamily: fonts.bold,
     marginTop: 12,
   },
   productDetailsPriceLabel: {
-    fontSize: 16,
+    fontSize: 15,
     marginTop: 4,
     color: colors.gray,
     fontFamily: fonts.regular,
@@ -186,20 +244,23 @@ const styles = StyleSheet.create({
     fontFamily: fonts.bold,
   },
   productAllDesc: {
-    width: '100%',
     display: 'flex',
-    flexDirection: 'column',
-    marginTop: 14,
-    borderTopWidth: 1,
-    paddingTop: 14,
-    borderTopColor: colors.lgray,
+    borderRadius: 4,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    backgroundColor: colors.white,
+    shadowOffset: { width: 1, height: 2 },
+    shadowColor: colors.shadow,
+    shadowOpacity: 0.06,
+    shadowRadius: 2,
+    marginBottom: 10,
   },
   prodescItem: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
     marginBottom: 2,
-    marginLeft: 4,
   },
   orderImage: {
     display: 'flex',
@@ -208,18 +269,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   deliveredImage: {
-    width: 160,
-    height: 160,
+    width: 180,
+    height: 180,
   },
   proLevel: {
     width: 80,
-    fontSize: 14,
+    fontSize: 13,
     marginRight: 10,
     color: colors.gray,
     fontFamily: fonts.regular,
   },
   proDetls: {
-    fontSize: 15,
+    fontSize: 14,
     width: '70%',
     fontFamily: fonts.regular,
   },
@@ -236,7 +297,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   segmentHeading: {
-    fontSize: 13,
+    fontSize: 12,
     marginBottom: 10,
     color: colors.green,
     textTransform: 'uppercase',
@@ -250,6 +311,22 @@ const styles = StyleSheet.create({
   orderDescItem: {
     display: 'flex',
     flexDirection: 'row',
-    marginBottom: 6,
+    marginBottom: 2,
+  },
+  imgEmpty: {
+    display: 'flex',
+    alignItems: 'center',
+    paddingVertical: 60,
+  },
+  emptyImages: {
+    width: 70,
+    height: 70,
+    opacity: 0.2,
+  },
+  ctempty: {
+    fontSize: 13,
+    color: colors.black,
+    fontFamily: fonts.regular,
+    opacity: 0.2,
   },
 });

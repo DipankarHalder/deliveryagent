@@ -3,17 +3,18 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   authentication,
   getUserProfile,
+  changePassword,
   listOfProducts,
+  orderItemWithId,
 } from '../actions/coreActions';
 
 export const CoreContext = createContext();
 export const CoreProvider = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(false);
-
   /*
    *  @authentication
    *  with params (email/username and password)
    */
+  const [isLoading, setIsLoading] = useState(false);
   const [userToken, setUserToken] = useState(null);
   const [userInfo, setUserInfo] = useState(null);
   const authLogin = payload => {
@@ -73,24 +74,50 @@ export const CoreProvider = ({ children }) => {
   const [userProfile, setUserProfile] = useState(null);
   const getUserProfileInformation = () => {
     getUserProfile()
+      .then(res => setUserProfile(res.data))
+      .catch(err => console.log(err));
+  };
+
+  /*
+   *  @get change user password
+   *  using post api
+   */
+  const [isPasswordLoading, setIsPasswordLoading] = useState(false);
+  const [errMsg, setErrMsg] = useState(null);
+  const setNewPasswordForUser = payload => {
+    setIsPasswordLoading(true);
+    changePassword(payload)
       .then(res => {
-        console.log(res.data);
-        setUserProfile(res.data);
+        res.data.status === 1
+          ? setErrMsg('Password Successfully Updated')
+          : setErrMsg('Current Password Invalid');
+        setIsPasswordLoading(false);
+        setTimeout(() => {
+          setErrMsg('');
+        }, 3000);
       })
       .catch(err => console.log(err));
   };
 
   /*
-   *  @get all products
+   *  @get all order list items
    *  using post api
    */
   const [userProdList, setUserProdList] = useState(null);
   const getAllProductList = useCallback(payload => {
     listOfProducts(payload)
-      .then(res => {
-        console.log(res.data);
-        setUserProdList(res.data);
-      })
+      .then(res => setUserProdList(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
+  /*
+   *  @get a particular order item
+   *  using post api
+   */
+  const [userOrderItem, setUserOrderItem] = useState(null);
+  const getOrderItem = useCallback(payload => {
+    orderItemWithId(payload)
+      .then(res => setUserOrderItem(res.data))
       .catch(err => console.log(err));
   }, []);
 
@@ -105,14 +132,19 @@ export const CoreProvider = ({ children }) => {
   return (
     <CoreContext.Provider
       value={{
+        errMsg,
         isLoading,
         userToken,
         userInfo,
         userProfile,
         userProdList,
+        userOrderItem,
+        isPasswordLoading,
         authLogin,
         authLogout,
         getAllProductList,
+        setNewPasswordForUser,
+        getOrderItem,
       }}>
       {children}
     </CoreContext.Provider>

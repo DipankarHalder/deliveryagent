@@ -40,11 +40,41 @@ export const getUserProfile = async () => {
   }
 };
 
-/* porduct list */
+/* get change password */
+export const changePassword = async payload => {
+  const userToken = await accessBasedToken();
+  try {
+    const result = await ServicesManager('/auth/changePassword', {
+      method: 'POST',
+      headers: constructheader(userToken),
+      data: payload,
+    });
+    return result;
+  } catch (error) {
+    return error.response.data;
+  }
+};
+
+/* order list */
 export const listOfProducts = async payload => {
   const userToken = await accessBasedToken();
   try {
     const result = await ServicesManager('/order/list', {
+      method: 'POST',
+      headers: constructheader(userToken),
+      data: payload,
+    });
+    return result;
+  } catch (error) {
+    return error.response.data;
+  }
+};
+
+/* order with id */
+export const orderItemWithId = async payload => {
+  const userToken = await accessBasedToken();
+  try {
+    const result = await ServicesManager('/order/details', {
       method: 'POST',
       headers: constructheader(userToken),
       data: payload,

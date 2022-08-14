@@ -14,10 +14,10 @@ import { useNavigation } from '@react-navigation/native';
 import { CoreContext } from '../../services/context/coreContext';
 import { Dropdown } from 'react-native-element-dropdown';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
-
 import colors from '../../components/config/colors';
 import fonts from '../../components/config/fonts';
 import Calendar from '../../assets/images/icons/calendar.svg';
+import ChevronRight from '../../assets/images/icons/chevron-right.svg';
 
 const dataList = [
   { label: 'Asigned', value: 'ASSIGNED_DELIVERY_AGENT' },
@@ -53,10 +53,9 @@ export const OrderScreen = () => {
     const payload = {
       page: 1,
       perPage: 10,
-      deliveryDate: '2022-07-27', //mainDate
+      deliveryDate: mainDate,
       status: dropDownValue,
     };
-    console.log(payload);
     getAllProductList(payload);
   }, [dropDownValue, getAllProductList, mainDate]);
 
@@ -72,7 +71,7 @@ export const OrderScreen = () => {
           You have to collect the following products from the booth.
         </Text>
         <View style={styles.datePickerCover}>
-          <Text style={styles.datetext}>Filter with status and date</Text>
+          <Text style={styles.datetext}>Search items with...</Text>
           <View style={styles.filterCover}>
             <View style={styles.statusFilter}>
               <Text style={styles.filterText}>Status:</Text>
@@ -111,9 +110,9 @@ export const OrderScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.deliveryList}>
-          {productsData &&
-            productsData.map(item => (
+        {productsData && productsData.length ? (
+          <View style={styles.deliveryList}>
+            {productsData.map(item => (
               <Pressable
                 style={styles.deliveryItem}
                 onPress={() => detailsItem(item.id)}
@@ -153,9 +152,21 @@ export const OrderScreen = () => {
                       : 'Delivered'}
                   </Text>
                 </View>
+                <View style={styles.rightItemBtn}>
+                  <ChevronRight width={24} height={24} stroke={colors.gray} />
+                </View>
               </Pressable>
             ))}
-        </View>
+          </View>
+        ) : (
+          <View style={styles.imgEmpty}>
+            <Image
+              style={styles.emptyImages}
+              source={require('../../assets/images/empty-cart.png')}
+            />
+            <Text style={styles.ctempty}>Container empty</Text>
+          </View>
+        )}
       </View>
     </ScrollView>
   );
@@ -317,5 +328,26 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: colors.gray,
     fontFamily: fonts.regular,
+  },
+  rightItemBtn: {
+    position: 'absolute',
+    top: '52%',
+    right: 20,
+  },
+  imgEmpty: {
+    display: 'flex',
+    alignItems: 'center',
+    paddingVertical: 120,
+  },
+  emptyImages: {
+    width: 70,
+    height: 70,
+    opacity: 0.2,
+  },
+  ctempty: {
+    fontSize: 13,
+    color: colors.black,
+    fontFamily: fonts.regular,
+    opacity: 0.2,
   },
 });

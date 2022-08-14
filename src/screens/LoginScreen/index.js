@@ -32,6 +32,7 @@ export const LoginScreen = () => {
             placeholderText="example@jucify.com"
             value={username}
             setValue={setUsername}
+            editable={isLoading ? false : true}
           />
           <CustomInput
             labelText="Password"
@@ -39,6 +40,7 @@ export const LoginScreen = () => {
             value={password}
             setValue={setPassword}
             secureText={true}
+            editable={isLoading ? false : true}
           />
           {isLoading ? (
             <LoadButton />
